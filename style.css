@@ -1,0 +1,416 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.layout{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: 10% auto auto 15%;
+    grid-template-areas: 
+        'header header header header header header'
+        '   .    main   main   main   main    .'
+        '   .    main   main   main   main     .'
+        'footer footer footer footer footer footer';
+}
+
+.header{
+    background-color: rgb(251, 242, 98);
+    grid-area: header;
+
+}
+
+.nav__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 8px auto;
+}
+.logo-nav{
+    height: 34px;
+    width: 134px;
+}
+.logo-plus{
+    max-width: 340px;
+    max-height: 39px;
+}
+.form-nav{
+    padding: 10px 200px 10px 10px;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 20px auto;
+}
+.nav-main{
+    display: flex;
+}
+.nav-item{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-item >li > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.main{
+    grid-area: main;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main__img{
+    width: 100%;
+}
+
+.services{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    width: 75%;
+    margin: 50px auto;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card__services{
+    font-size: 18px;
+}
+.card__services > a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.titulo__ofertas{
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 30px;
+    font-weight: 100;
+    gap: 20px;
+    align-items: center;
+}
+
+.titulo__ofertas  a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+
+.ofertas{
+    display: flex;
+    gap: 24px;
+    margin: 50px auto;
+    width: 75%;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.img__ofertas{
+    width: 224px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.card__ofertas:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.card__ofertas{
+    background-color: #fff;
+    display: inline-block;
+}
+
+.precios__ofertas{
+    padding: 20px;
+}
+.precios__ofertas > p{
+    font-size: 25px;
+}
+
+.off{
+    color: #339f40;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nivel_6{
+    width: 75%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.titulo_nivel_6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    background-color: #a90f90;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+.packs_disney{
+    width: 75%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.banner-n6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    background-color: #a90f90;
+}
+
+.titu-n6{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.planes-n6{
+    display: flex;
+}
+
+.servicios-n6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.caja-n6{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 70px;
+}
+
+.caja-n6 > a > img{
+    border-radius: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    width: 72px;
+    height: 72px;
+}
+
+.beneficios-titulo{
+    font-size: 18px;
+    font-weight: 100;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.boton-n6{
+    border: 1px solid rgba(128, 128, 128, 0.363);
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boton-n6 > button{
+    background-color: #3483fa;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: #3483fa;
+}
+.boton-n6 > button:hover{
+    background-color: #0453ca;
+    cursor: pointer;
+}
+
+.beneficios__mercado__puntos{
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 30px;
+    font-weight: 100;
+    gap: 20px;
+    align-items: center;
+}
+
+.beneficios__mercado__puntos > a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 8px;
+}    
+
+.img__beneficios_mercado_puntos{
+    width: 75%;
+    display: flex;
+    margin: 50px auto;
+    border-radius: 4px;
+    gap: 30px;
+}
+
+.card__beneficios{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 384px;
+    height: 250px;
+
+}
+
+.card__beneficios > img {
+    width: 384px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.combo__beneficio{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.publicidad{
+    display: flex;
+    margin: 50px auto;
+    width: 75%;
+    height: 250px;
+    border-radius: 5px;
+    background-color: #2968c8;
+    color: #fff;
+}
+.publicidad > img{
+    width: 700.81px;
+    border-radius: 5px;
+} 
+
+.smartweek{
+    display: block;
+    padding: 70px 80px 30px 65px;
+}
+#smart{
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 4px;
+}
+.pweek{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.smartweek > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+} 
+
+.promo{
+    display: flex;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 30px;
+    font-weight: 100;
+    gap: 20px;
+    align-items: center;
+}
+
+.descrubi__promo{
+    display: flex;
+    width: 75%;
+    margin: 50px auto;
+    gap: 20px;
+}
+.promo__oferta{
+    display: flex;
+    height: 250px;
+    background-color: #fff;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+.promo__botas{
+    width: 210px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.text__botas{
+    padding: 60px 80px 100px 40px;
+}
+
+#oferta{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+#h30{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.button__promo{
+    background-color: #4f80f7;
+    padding: 9px 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #fff;
+    border: #4f80f7;
+}
+
+#oportunidad{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+#cupon{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.footer{
+    background-color: #fff;
+    grid-area: footer;
+}
+
+.footer-list{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    font-size: 14px;
+    width: 65%;
+    margin: 10px auto;
+}
+.footer-legales{
+    margin: 10px auto;
+    width: 65%;
+    color: #000;
+    font-size: 14px;
+}
+.footer-list > li > a{
+    text-decoration: none;
+    color: #000;
+}
